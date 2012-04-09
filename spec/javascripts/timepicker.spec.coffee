@@ -21,3 +21,12 @@ describe "timepicker", ->
 			spyOn(Date.prototype, "getTime").andReturn(123456)
 			$(".someTimeInput").timepicker();
 			expect($("body")).toContain("#123456_timepicker")
+
+		it "should contain columns", ->
+			expect($("#start_time_timepicker")).toContain(".ui-timepicker-column")
+
+		it "should contain AM and PM columns", ->
+			expect($("#start_time_timepicker .ui-timepicker-header:first")).toHaveText("AM")
+			expect($("#start_time_timepicker .ui-timepicker-header:last")).toHaveText("PM")
+
+		

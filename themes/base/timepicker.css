@@ -1,0 +1,45 @@
+.ui-timepicker{
+	width: 25em;
+}
+.ui-timepicker-column{
+	display: inline-block;
+	width: 12em;
+}
+.ui-timepicker-header{
+	text-align: center;
+	padding: .2em;
+}
+.ui-timepicker ul{
+	padding: 0;
+	margin: 0;
+}
+.ui-timepicker li{
+	list-style:none;
+}
+.ui-timepicker-fullhour{
+	display: inline-block;
+	width: 3.5em;
+	padding: .3em .7em .3em .3em;
+	text-align: right;
+}
+.ui-timepicker li ul{
+	display: none;
+}
+.ui-timepicker li ul li{
+	display: inline-block;
+	width: 2em;
+}
+.ui-timepicker-partialhour{
+	padding: .3em .4em;
+}
+.ui-state-hover{
+	margin: -1px;
+}
+li.ui-state-hover{
+	border: none !important;
+	font-weight: normal !important;
+	margin: 0;
+}
+li.ui-state-hover ul{
+	display: inline-block;
+}
